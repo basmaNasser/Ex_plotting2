@@ -12,11 +12,11 @@ vehiclesNEI <- NEI[NEI$SCC %in% SCCvehicles,]
 baltimoreVehicNEI <- vehiclesNEI[vehiclesNEI$fips=="24510",]
 
 
-png("plot5.png",width=480,height=500)
+png("plot5.png",width=480,height=600)
 ggplot(baltimoreVehicNEI,aes(factor(year),Emissions)) +
         geom_bar(stat="identity") +
          guides(fill=FALSE) +
         labs(x="year", y=expression("Total PM"[2.5]*" Emission (Tons)")) +
-        labs(title=expression("PM"[2.5]*" Baltimore City motor vechile emissions 1999-2008 by Source Type"))
+        labs(title=expression("PM"[2.5]*" Baltimore City motor vechile \n emissions 1999-2008 by Source Type"))
         
 dev.off()
