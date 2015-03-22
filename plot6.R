@@ -24,6 +24,6 @@ ggplot(bothNEI ,aes(x=factor(year), y=Emissions, fill=city)) +
         facet_grid(scales="free", space="free", .~city) +
         guides(fill=FALSE) + 
         labs(x="year", y=expression("Total PM"[2.5]*" Emission (Tons)")) +
-        labs(title=expression("PM"[2.5]*" Baltimore vs LA City motor vechile emissions 1999-2008 by Source Type"))
+        labs(title=expression("PM"[2.5]*" Baltimore vs LA City motor vechile\n emissions 1999-2008 by Source Type"))
 
 dev.off()
